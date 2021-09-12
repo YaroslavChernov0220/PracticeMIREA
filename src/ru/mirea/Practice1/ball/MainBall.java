@@ -4,7 +4,7 @@ public class MainBall {
     public static void main(String[] args) {
         Ball bl1 = new Ball("Red", 25);
         Ball bl2 = new Ball();
-        Ball bl3 = new Ball("Green", 15);
+        Ball bl3 = new Ball("Green");
         bl2.setColor("Yellow");
         bl2.setWeight(20);
         System.out.println(bl1);
