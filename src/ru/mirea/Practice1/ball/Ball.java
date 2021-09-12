@@ -1,4 +1,4 @@
-package ru.mirea.Practice_2.ball;
+package ru.mirea.Practice1.ball;
 
 public class Ball {
     private String color;

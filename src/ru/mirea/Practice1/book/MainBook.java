@@ -1,4 +1,4 @@
-package ru.mirea.Practice_2.book;
+package ru.mirea.Practice1.book;
 
 public class MainBook {
     public static void main(String[] args) {
