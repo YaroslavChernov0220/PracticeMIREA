@@ -4,7 +4,6 @@ public class Author {
     private String name;
     private String email;
     private char gender;
-
     public Author(String name, char gender, String email) {
         this.name = name;
         this.email = email;
