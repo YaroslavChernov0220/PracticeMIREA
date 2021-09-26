@@ -1,25 +1,25 @@
 package ru.mirea.Practice3.task1;
 
 public class Rectangle extends Shape{
-    protected double wight;
+    protected double width;
     protected double length;
     @Override
     public double getArea() {
-        return wight*length;
+        return width*length;
     }
 
     @Override
     public double getPerimeter() {
-        return (2*wight+2*length);
+        return (2*width+2*length);
     }
 
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "wight=" + wight +
-                ", length=" + length +
-                ", color='" + color + '\'' +
-                ", filled=" + filled +
+        return "Shape: rectangle," +
+                "width: " + width +
+                ", length: " + length +
+                ", color: " + color + '\'' +
+                ", filled: " + filled +
                 '}';
     }
 
@@ -27,18 +27,18 @@ public class Rectangle extends Shape{
 
     }
     public Rectangle(double wight, double length) {
-        this.wight = wight;
+        this.width = wight;
         this.length = length;
     }
 
     public Rectangle(double wight, double length,String color, boolean filled ) {
         super(color, filled);
-        this.wight = wight;
+        this.width = wight;
         this.length = length;
     }
 
     public double getWight() {
-        return wight;
+        return width;
     }
 
     public double getLength() {
@@ -46,10 +46,11 @@ public class Rectangle extends Shape{
     }
 
     public void setWight(double wight) {
-        this.wight = wight;
+        this.width = wight;
     }
 
     public void setLength(double length) {
         this.length = length;
     }
+
 }

@@ -8,9 +8,9 @@ public class Main {
         System.out.println(s1.getPerimeter()); // which version?
         System.out.println(s1.getColor());
         System.out.println(s1.isFilled());
-        //System.out.println(s1.getRadius()); объект суперкласса не может вызывать методы классов наследников
+        //System.out.println(s1.getRadius());
 
-        Circle c1 = (Circle)s1; // Downcast back to Circle
+        Circle c1 = (Circle) s1; // Downcast back to Circle
         System.out.println(c1);
         System.out.println(c1.getArea());
         System.out.println(c1.getPerimeter());
@@ -18,16 +18,16 @@ public class Main {
         System.out.println(c1.isFilled());
         System.out.println(c1.getRadius());
 
-        //Shape s2 = new Shape(); нельзя создавать объекты абстрактного класса
+        //Shape s2 = new Shape();
 
         Shape s3 = new Rectangle(1.0, 2.0, "RED", false); // Upcast
         System.out.println(s3);
         System.out.println(s3.getArea());
         System.out.println(s3.getPerimeter());
         System.out.println(s3.getColor());
-        //System.out.println(s3.getLength()); объект суперкласса не может вызывать методы классов наследников
+       // System.out.println(s3.getLength());
 
-        Rectangle r1 = (Rectangle)s3; // downcast
+        Rectangle r1 = (Rectangle) s3; // downcast
         System.out.println(r1);
         System.out.println(r1.getArea());
         System.out.println(r1.getColor());
@@ -37,19 +37,19 @@ public class Main {
         System.out.println(s4);
         System.out.println(s4.getArea());
         System.out.println(s4.getColor());
-        //System.out.println(s4.getSide()); объект суперкласса не может вызывать методы классов наследников
+        //System.out.println(s4.getSide());
 
 // Take note that we downcast Shape s4 to Rectangle,
 // which is a superclass of Square, instead of Square
-        Rectangle r2 = (Rectangle)s4;
+        Rectangle r2 = (Rectangle) s4;
         System.out.println(r2);
         System.out.println(r2.getArea());
         System.out.println(r2.getColor());
-        //System.out.println(r2.getSide());  // у класса rectangle нету метода getSide
+        //System.out.println(r2.getSide());
         System.out.println(r2.getLength());
 
 // Downcast Rectangle r2 to Square
-        Square sq1 = (Square)r2;
+        Square sq1 = (Square) r2;
         System.out.println(sq1);
         System.out.println(sq1.getArea());
         System.out.println(sq1.getColor());
