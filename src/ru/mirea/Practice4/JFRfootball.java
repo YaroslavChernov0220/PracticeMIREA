@@ -17,7 +17,7 @@ public class JFRfootball extends JFrame{
     public JFRfootball() {
         super("Real Madrid vs AC Milan");
         setDefaultCloseOperation( EXIT_ON_CLOSE );
-        setLayout(new GridLayout(3, 3));
+        setLayout(new GridLayout(5, 3));
         add(RealMadrid);
         setSize(1600,700);
 
@@ -75,7 +75,7 @@ public class JFRfootball extends JFrame{
     }
 
     public void newScore() {
-        Score.setText( MadridGoal + "  " + MilanGoal);
+        Score.setText( MadridGoal + "X" + MilanGoal);
     }
 
     public static void main(String[] args) {
