@@ -5,6 +5,7 @@ public class Ball {
     private int weight;
 
     public Ball(){}
+
     public Ball(String color, int weight){
         this.color = color;
         this.weight = weight;
