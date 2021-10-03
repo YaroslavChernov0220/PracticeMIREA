@@ -1,6 +1,7 @@
 package ru.mirea.Practice1.ball;
 
 public class MainBall {
+
     public static void main(String[] args) {
         Ball bl1 = new Ball("Red", 25);
         Ball bl2 = new Ball();
