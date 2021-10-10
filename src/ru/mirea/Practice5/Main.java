@@ -1,24 +1,26 @@
 package ru.mirea.Practice5;
 import java.util.Scanner;
-import java.nio.charset.StandardCharsets;
 
 public class Main {
 
-    public static void recursion(String n) {
-        if (n.length() == 1 || n.length() == 2 && n.charAt(0) == n.charAt(n.length()-1) ) {
-            System.out.println("YES");
-        }
-        else if (n.charAt(0) == n.charAt(n.length() - 1)) {
-            recursion(n.substring(1,n.length()-1));
-        }
-        else System.out.println("NO");
-    }
-    public static void main(String[] args) {
-        String s = " ";
+    public static void main(String[] args)
+    {
+        System.out.print("Select a task: ");
         Scanner in = new Scanner(System.in);
-        while (s != "0") {
-            s = in.next();
-            recursion(s);
+        int digit = in.nextInt();
+
+        switch (digit)
+        {
+            case 1:
+                task12.Func1();
+                break;
+            case 2:
+                task13.Func2();
+                break;
+            case 3:
+                digit = in.nextInt();
+                task14.GoToNumber(digit);
+                break;
         }
     }
 }
