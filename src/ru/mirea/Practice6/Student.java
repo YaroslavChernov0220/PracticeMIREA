@@ -36,9 +36,9 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "IDnumber =" + IDnumber +
-                ", name = " + name +
-                ", mark =" + mark +
+                "IDnumber=" + IDnumber +
+                ", name='" + name + '\'' +
+                ", mark=" + mark +
                 '}' + '\n';
     }
 }
