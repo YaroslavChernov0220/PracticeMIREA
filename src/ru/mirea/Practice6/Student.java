@@ -1,44 +1,43 @@
 package ru.mirea.Practice6;
-public class Student {
-    private int IDnumber;
-    private String name;
-    private int mark;
-    public Student(int IDnumber, String name,int mark) {
-        this.IDnumber = IDnumber;
-        this.name = name;
-        this.mark = mark;
-    }
+public class Student implements Comparable {
 
-    public int getIDnumber() {
-        return IDnumber;
-    }
+    private int idNum;
+    private int GPA;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setIDnumber(int IDnumber) {
-        this.IDnumber = IDnumber;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getMark() {
-        return mark;
-    }
-
-    public void setMark(int mark) {
-        this.mark = mark;
+    public Student(int idNum, int GPA) {
+        this.idNum = idNum;
+        this.GPA = GPA;
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "IDnumber=" + IDnumber +
-                ", name='" + name + '\'' +
-                ", mark=" + mark +
-                '}' + '\n';
+                "idNum=" + idNum +
+                ", GPA=" + GPA +
+                '}';
+    }
+
+    public int getIdNum() {
+        return idNum;
+    }
+
+    public void setIdNum(int idNum) {
+        this.idNum = idNum;
+    }
+
+    public int getGPA() {
+        return GPA;
+    }
+
+    public void setGPA(int GPA) {
+        this.GPA = GPA;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if(!(o instanceof Student))
+            throw new IllegalArgumentException("Объект не является студентом!");
+        // < 0 -> o, 0 -> ==, >0 -> this;
+        return this.idNum - ((Student) o).idNum;
     }
 }
