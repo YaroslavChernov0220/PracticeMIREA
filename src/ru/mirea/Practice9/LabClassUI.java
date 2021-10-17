@@ -50,20 +50,20 @@ public class LabClassUI extends JPanel implements LabClass {
             pnlLabel[i] = new JPanel();
             pnlD[0].add(pnlLabel[i]);
         }
-        mainLabel.setPreferredSize(new Dimension(1200, 400));
-        fio.setPreferredSize(new Dimension(400, 150));
-        inn.setPreferredSize(new Dimension(400, 150));
-        Adding.setPreferredSize(new Dimension(400, 400));
-        Finding.setPreferredSize(new Dimension(400, 400));
-        Sorting.setPreferredSize(new Dimension(400, 400));
+        mainLabel.setPreferredSize(new Dimension(1200, 300));
+        fio.setPreferredSize(new Dimension(300, 150));
+        inn.setPreferredSize(new Dimension(300, 150));
+        Adding.setPreferredSize(new Dimension(300, 300));
+        Finding.setPreferredSize(new Dimension(300, 300));
+        Sorting.setPreferredSize(new Dimension(300, 300));
 
-        Font font = new Font("Times New Roman", Font.BOLD, 30);
+        Font font = new Font("Arial", Font.BOLD, 15);
 
         mainLabel.setVerticalAlignment(JLabel.CENTER);
         mainLabel.setHorizontalAlignment(JLabel.CENTER);
         mainLabel.setFont(font);
         mainLabel.setForeground(Color.BLACK);
-        mainLabel.setText("Введите ФИО и ИНН");
+        mainLabel.setText("ФИО и ИНН");
 
         innLabel.setVerticalAlignment(JLabel.CENTER);
         innLabel.setHorizontalAlignment(JLabel.CENTER);
@@ -93,7 +93,7 @@ public class LabClassUI extends JPanel implements LabClass {
         Sorting.setHorizontalAlignment(JLabel.CENTER);
         Sorting.setFont(font);
         Sorting.setForeground(Color.BLACK);
-        Sorting.setText("Отсортировать студентов");
+        Sorting.setText("Сортировка студентов");
 
         fio.setHorizontalAlignment(JLabel.HORIZONTAL);
         fio.setFont(font);
@@ -157,7 +157,7 @@ public class LabClassUI extends JPanel implements LabClass {
             if (f)
                 throw new NotFoundStudentExeption();
         } catch (NotFoundStudentExeption err){
-            mainLabel.setText("Такого студента нет в базе");
+            mainLabel.setText("Студента нет в базе");
         } catch (EmptyStringExeption err){
             mainLabel.setText("Ваш ИНН недействителен");
         }
@@ -168,7 +168,7 @@ public class LabClassUI extends JPanel implements LabClass {
         try {
             if (!(s.getName().equals("") || s.getInn().equals(""))) {
                 students.add(s);
-                mainLabel.setText("Студент успешно добавлен");
+                mainLabel.setText("Студент добавлен");
             } else {
                 throw new EmptyStringExeption();
             }
@@ -182,6 +182,6 @@ public class LabClassUI extends JPanel implements LabClass {
     public void SortStudents() {
         Comparator<Student> comp = new SortingStudents();
         students.sort(comp);
-        mainLabel.setText("Список успешно отсортирован");
+        mainLabel.setText("Список отсортирован");
     }
 }
