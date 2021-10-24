@@ -12,7 +12,7 @@ public class Main {
         ((MagicChair) c.chair).doMagic();
         c.setChair(factory.createFunctionalChair());
         int sum = ((FunctionalChair) c.chair).sum(15, 3);
-        System.out.println("Sum:  " + sum);
+        System.out.println("Sum: " + sum);
         c.setChair(factory.createVictorianChair());
         ((VictorianChair) c.chair).setAge(67);
         int age = ((VictorianChair) c.chair).getAge();

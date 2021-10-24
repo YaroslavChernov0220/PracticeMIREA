@@ -8,13 +8,13 @@ public class ConcreteFactory implements ComplexAbstactFactory{
         Scanner in = new Scanner(System.in);
         int real = in.nextInt();
         int imaginary = in.nextInt();
-        Complex com = new Complex(real,imaginary);
-        return com;
+        Complex Comp = new Complex(real,imaginary);
+        return Comp;
     }
 
     @Override
     public Complex createComplex(int real, int imaginary) {
-        Complex com = new Complex(real,imaginary);
-        return com;
+        Complex Comp = new Complex(real,imaginary);
+        return Comp;
     }
 }

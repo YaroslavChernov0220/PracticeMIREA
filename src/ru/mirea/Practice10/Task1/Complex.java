@@ -30,8 +30,8 @@ public class Complex {
 
     @Override
     public String toString() {
-        return "Complex{" + " real=" + real +
-                ", imaginary= " + imaginary +
+        return "Complex {" + "real = " + real +
+                ", imaginary = " + imaginary +
                 '}';
     }
 }
