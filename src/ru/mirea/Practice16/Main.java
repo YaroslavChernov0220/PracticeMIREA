@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         OrderManager k = new OrderManager();
         Dish[] d1 = new Dish[] {
-                new Dish(220, "Суп", "Описание"),
+                new Dish(220, "Борщ", "Описание"),
                 new Dish(550,"Лазанья", "Описание"),
                 new Dish(99,"Пюре", "Описание"),
                 new Dish(199,"Хачапури по-аджарски", "Описание"),

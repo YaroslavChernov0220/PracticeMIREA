@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
-public class Concatenate {
+public class Concatenator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String path = sc.nextLine();
