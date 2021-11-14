@@ -1,4 +1,4 @@
-package ru.mirea.Practice1215.Task5;
+package ru.mirea.Practice12_15.Task5;
 
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package ru.mirea.Practice1215.Task1;
+package ru.mirea.Practice12_15.Task1;
 
 public class Person {
     private String name, surname, patronymic;

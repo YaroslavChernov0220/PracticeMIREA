@@ -1,4 +1,4 @@
-package ru.mirea.Practice1215.Task3;
+package ru.mirea.Practice12_15.Task3;
 
 public class Shirt {
     private String article, fullName, color, size;

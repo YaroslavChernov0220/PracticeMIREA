@@ -1,4 +1,4 @@
-package ru.mirea.Practice1215.Task4;
+package ru.mirea.Practice12_15.Task4;
 
 public class Phone {
     private String code, city, triplet, quadruple;

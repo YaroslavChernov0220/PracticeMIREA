@@ -1,4 +1,4 @@
-package ru.mirea.Practice1215.Task2;
+package ru.mirea.Practice12_15.Task2;
 
 import java.util.StringTokenizer;
 
