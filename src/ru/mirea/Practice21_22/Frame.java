@@ -2,12 +2,12 @@ package ru.mirea.Practice21_22;
 
 import java.util.Scanner;
 
-public class Base {
+public class Frame {
     private IDocument Document;
     private IDocumentCreate DocumentCreate;
     public void New(){
         Scanner in = new Scanner(System.in);
-        System.out.println("Выберите: Text, Image, Music");
+        System.out.println("Text, Image, Music");
         String nameDocument = in.nextLine();
         if (nameDocument.equals("Text")){
             DocumentCreate = new CreateTextDocument();

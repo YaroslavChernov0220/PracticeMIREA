@@ -4,18 +4,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Base basis = new Base();
+        Frame frame = new Frame();
         Scanner in = new Scanner(System.in);
         String choice;
         do {
-            basis.New();
-            basis.Open();
-            basis.Save();
-            basis.Exit();
-            System.out.println("==================");
-            System.out.println("Новый файл(yes/no)");
+            frame.New();
+            frame.Open();
+            frame.Save();
+            frame.Exit();
+            System.out.println("Создать новый документ? (Да/Нет)");
             choice = in.nextLine();
-            System.out.println("==================");
-        } while(choice.equals("yes"));
+        } while(choice.equals("Да"));
     }
 }

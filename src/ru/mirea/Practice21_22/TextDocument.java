@@ -2,15 +2,15 @@ package ru.mirea.Practice21_22;
 
 public class TextDocument implements IDocument {
     public void New() {
-        System.out.println("Text: Создан файл");
+        System.out.println("Файл создан (Text)");
     }
     public void Open() {
-        System.out.println("Text: Открыт файл");
+        System.out.println("Файл открыт (Text)");
     }
     public void Save() {
-        System.out.println("Text: Сохранен файл");
+        System.out.println("Файл сохранен (Text)");
     }
     public void Exit() {
-        System.out.println("Text: Закрыт файл");
+        System.out.println("Файл закрыт (Text)");
     }
 }

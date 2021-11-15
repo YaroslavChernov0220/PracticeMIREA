@@ -2,15 +2,15 @@ package ru.mirea.Practice21_22;
 
 public class MusicDocument implements IDocument {
     public void New() {
-        System.out.println("Music: Создан файл");
+        System.out.println("Файл создан (Music)");
     }
     public void Open() {
-        System.out.println("Music: Открыт файл");
+        System.out.println("Файл открыт (Music)");
     }
     public void Save() {
-        System.out.println("Music: Сохранен файл");
+        System.out.println("Файл сохранен (Music)");
     }
     public void Exit() {
-        System.out.println("Music: Закрыт файл");
+        System.out.println("Файл закрыт (Music)");
     }
 }
