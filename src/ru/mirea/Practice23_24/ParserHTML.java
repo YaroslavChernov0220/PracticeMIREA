@@ -15,9 +15,9 @@ public class ParserHTML {
     public ParserHTML() throws IOException{
 
 
-        new File(FOLDER).mkdirs(); // папка, куда будут сохранены изображения
-        Document document = Jsoup.connect(URL).get(); // get HTML
-        Elements elements = document.select("img"); // all img in document
+        new File(FOLDER).mkdirs();
+        Document document = Jsoup.connect(URL).get();
+        Elements elements = document.select("img");
 
 
         String imgURL;
@@ -38,7 +38,7 @@ public class ParserHTML {
 
                     OutputStream folderOUt = new FileOutputStream(FOLDER + "/" + imgName);
 
-                    while ( (n= in.read(buffer))  != -1){ // сохранение в файл
+                    while ( (n= in.read(buffer))  != -1){
                         folderOUt.write(buffer,0,n);
                     }
                     folderOUt.close();
