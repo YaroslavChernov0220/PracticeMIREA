@@ -11,8 +11,8 @@ public class DateCompany {
     public void newDateCompany(String str) {
 
         String[] stroka = str.split(",", 8);
-        double dohod = Double.parseDouble(stroka[6].replaceAll("\\\"", "").replace(',', '.'));
-        double rashod = Double.parseDouble(stroka[7].replaceAll("\\\"", "").replace(',', '.'));
+        double dohod = Double.parseDouble(stroka[6].replaceAll("\"", "").replace(',', '.'));
+        double rashod = Double.parseDouble(stroka[7].replaceAll("\"", "").replace(',', '.'));
         this.expenses += rashod;
         this.income += dohod;
 
